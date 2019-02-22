@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5=ijr34il53)57+y#uworw_)r1j2z)zqn2-uv89tt&wzbo+%k='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,10 +55,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'utils.middleware.BookMiddleware',
-    'utils.middleware.AnotherMiddleware',
-    'utils.middleware.UrlPathRecordMiddleware',
-    'utils.middleware.BlockedIpMiddleware',
+   # 'utils.middleware.BookMiddleware',
+   # 'utils.middleware.AnotherMiddleware',
+   # 'utils.middleware.UrlPathRecordMiddleware',
+   # 'utils.middleware.BlockedIpMiddleware',
 ]
 
 ROOT_URLCONF = 'bookstore.urls'
@@ -135,12 +135,13 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR,'static')
+#]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'static')
 
+STATIC_ROOT = os.path.join(BASE_DIR,'collect_static')
 
 #富文本
 TINYMCE_DEFAULT_CONFIG = {

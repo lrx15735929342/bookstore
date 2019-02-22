@@ -1,0 +1,67 @@
+[2019-02-20 19:32:31 +0800] [4120] [INFO] Starting gunicorn 19.9.0
+[2019-02-20 19:32:31 +0800] [4120] [INFO] Listening at: http://0.0.0.0:8000 (4120)
+[2019-02-20 19:32:31 +0800] [4120] [INFO] Using worker: sync
+[2019-02-20 19:32:31 +0800] [4123] [INFO] Booting worker with pid: 4123
+[2019-02-20 19:32:31 +0800] [4123] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+ImportError: No module named 'bookstore'
+[2019-02-20 19:32:31 +0800] [4123] [INFO] Worker exiting (pid: 4123)
+[2019-02-20 19:32:31 +0800] [4124] [INFO] Booting worker with pid: 4124
+[2019-02-20 19:32:31 +0800] [4124] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+ImportError: No module named 'bookstore'
+[2019-02-20 19:32:31 +0800] [4124] [INFO] Worker exiting (pid: 4124)
+[2019-02-20 19:32:31 +0800] [4120] [INFO] Shutting down: Master
+[2019-02-20 19:32:31 +0800] [4120] [INFO] Reason: Worker failed to boot.
+[2019-02-20 19:35:49 +0800] [4172] [INFO] Starting gunicorn 19.9.0
+[2019-02-20 19:35:49 +0800] [4172] [INFO] Listening at: http://0.0.0.0:8000 (4172)
+[2019-02-20 19:35:49 +0800] [4172] [INFO] Using worker: sync
+[2019-02-20 19:35:49 +0800] [4175] [INFO] Booting worker with pid: 4175
+[2019-02-20 19:35:49 +0800] [4175] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lrx/Envs/bookstore/lib/python3.5/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+ImportError: No module named 'bookstore'
+[2019-02-20 19:35:49 +0800] [4175] [INFO] Worker exiting (pid: 4175)
+[2019-02-20 19:35:49 +0800] [4172] [INFO] Shutting down: Master
+[2019-02-20 19:35:49 +0800] [4172] [INFO] Reason: Worker failed to boot.
